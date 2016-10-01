@@ -18,11 +18,11 @@ class ViewController: UIViewController {
     
     
 func averageIsAbove(a: Double, b: Double, c: Double) -> Bool {
-    switch Int((a + b + c) / 3) {
-    case 75...99999:
-        return true
-    default:
+    switch (a + b + c) / 3 {
+    case 0...75:
         return false
+    default:
+        return true
     }
     }
     
