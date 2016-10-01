@@ -19,7 +19,44 @@ class ViewController: UIViewController {
     
     
     // Implement your functions here!
+    func averageIsAbove(_ num1: Double, _ num2: Double, _ num3: Double) -> Bool{
+        let average =  (num1+num2+num3)/3
+        
+        if average > 75.0 {
+            return true
+        }else {
+            return false
+        }
+    }
     
+    func passwordCombo(username: String, password: Int) -> String {
+        if (username == "Jerry" || username == "Michael" || username == "Elaine") && (password%3==0){
+            return "Welcome!"
+        }else {
+            return "Access Denied"
+        }
+    }
+    
+    func describe(emoji: String) -> String {
+        
+        switch emoji {
+        case "💋":
+            return "Kiss"
+        case "🐈":
+            return "Cat"
+        case  "🐢":
+            return "Turtle"
+            
+        case "🍕":
+            return "Pizza"
+            
+        case "👻":
+            return "Ghost"
+            
+        default:
+            return "Unknown"
+        }
+    }
     
     
     
