@@ -5,7 +5,6 @@
 //  Created by James Campagno on 6/28/16.
 //  Copyright © 2016 Flatiron School. All rights reserved.
 //
-
 import UIKit
 
 class ViewController: UIViewController {
@@ -14,6 +13,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
     }
+    
+
     
     func averagelsAbove75(a:Int, b: Int, c: Int) -> Bool {
         
@@ -32,8 +33,10 @@ class ViewController: UIViewController {
 
 }
 
+    
+    
 
-    func passwordCombo (username: String, password:Int) -> String {
+    func passwordCombo(username: String, password:Int) -> String {
 
         switch username{
 
@@ -46,8 +49,43 @@ case password/3:
 return "Welcome"
 
 default:
-
-return "Access Denied"
+    
+    return "Access Denied"
+    
+    
+    }
 }
-}
 
+func describe(emoji:String)-> String {
+    
+    switch emoji {
+        
+        
+    case "Kiss":
+    
+    return "Kiss"
+    
+    case "Cat":
+    
+    return "Cat"
+    
+    case "Turtle":
+    
+    return "Turtle"
+    
+    case "Pizza":
+    
+    return "Pizza"
+    
+    case "Ghost":
+    
+    return "Ghost"
+
+    default:
+    
+    return "Unknown"
+    
+            }
+    
+            }
+}
