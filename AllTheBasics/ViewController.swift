@@ -16,8 +16,8 @@ class ViewController: UIViewController {
     }
     
     // Implement your functions here!
-    func averageIsAbove75(_ num1: Double, _ num2: Double, _ num3: Double) -> Bool {
-        var avg = (num1 + num2 + num3) / 3
+    func averageIsAbove(_ num1: Double, _ num2: Double, _ num3: Double) -> Bool {
+        let avg = (num1 + num2 + num3) / 3
         switch avg > 75 {
         case true:
             return true
@@ -27,8 +27,9 @@ class ViewController: UIViewController {
         
     }
     
-    func passwordCombo(_ username: String, _ password: Int) -> String {
+    func passwordCombo(username: String, password: Int) -> String {
         var usernameCheck = false
+        var passwordCheck =  false
         
         switch username {
         case "Jerry":
@@ -38,13 +39,22 @@ class ViewController: UIViewController {
         case "Michael":
             usernameCheck = true
         default:
-            return "Access Denied"
+            usernameCheck = false
         }
         
-        if password / 3 == 0 {
-                return "Welcome!"
+        if password % 3 == 0 {
+            passwordCheck = true
         } else {
-            return "Access Denied"}
+            passwordCheck = false
+        }
+        
+        if usernameCheck && passwordCheck {
+            return "Welcome!"
+        } else {
+            return "Access Denied"
+        }
+            
+        
         
     }
     
@@ -53,17 +63,17 @@ class ViewController: UIViewController {
     func describe(emoji: String) -> String {
         switch emoji {
         case "💋":
-            return "kiss"
+            return "Kiss"
         case "🐈" :
-            return "cat"
+            return "Cat"
         case "🐢":
-            return "turtle"
+            return "Turtle"
         case "🍕":
-            return "pizza"
+            return "Pizza"
         case "👻":
             return "Ghost"
         default:
-            return "unknown"
+            return "Unknown"
         }
     }
     
