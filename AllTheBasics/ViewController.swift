@@ -21,10 +21,40 @@ class ViewController: UIViewController {
     }
     
     func passwordCombo(username: String, password: Int) -> String{
-        return "Welcome"
+        switch username {
+        case "Elaine":
+            if (password % 3) == 0 {
+                 return "Welcome!"
+            }
+        case "Jerry":
+            if (password % 3) == 0 {
+                return "Welcome!"
+            }
+        case "Michael":
+            if (password % 3) == 0 {
+                return "Welcome!"
+            }
+
+        default:
+            return "Access Denied"
+        }
+        return "Access Denied"
     }
 
     func describe(emoji: String)->String{
-        return ""
+        switch emoji {
+        case "💋":
+            return "Kiss"
+        case "🐈":
+            return "Cat"
+        case "🐢":
+            return "Turtle"
+        case "🍕":
+            return "Pizza"
+        case "👻":
+            return "Ghost"
+        default:
+            return "Unknown"
+        }
     }
 }
