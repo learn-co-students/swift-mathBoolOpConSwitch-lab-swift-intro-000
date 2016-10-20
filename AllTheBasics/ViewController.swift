@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         
     }
     
-    func passwordCombo(_ username: String, password: Int) -> String {
+    func passwordCombo(_ username: String, _ password: Int) -> String {
         var usernameCheck = false
         
         switch username {
@@ -50,4 +50,21 @@ class ViewController: UIViewController {
     
     
 
+    func describe(emoji: String) -> String {
+        switch emoji {
+        case "💋":
+            return "kiss"
+        case "🐈" :
+            return "cat"
+        case "🐢":
+            return "turtle"
+        case "🍕":
+            return "pizza"
+        case "👻":
+            return "Ghost"
+        default:
+            return "unknown"
+        }
+    }
+    
 }
