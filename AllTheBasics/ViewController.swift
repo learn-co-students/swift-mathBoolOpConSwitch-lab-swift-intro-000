@@ -18,14 +18,12 @@ class ViewController: UIViewController {
     // Implement your functions here!
     
     func averageIsAbove75(num1: Double, num2: Double, num3: Double) -> Bool {
-        var total = num1 + num2 + num3
-        var average = total / 3
+        let average = (num1 + num2 + num3) / 3.0
         
-        switch average {
-        case average > 75:
+        if average > 75.0 {
             return true
-        default:
-            false
+        } else {
+            return false
         }
     }
     
@@ -45,18 +43,18 @@ class ViewController: UIViewController {
     
     func describe(emoji: String) -> String {
         switch emoji {
-        case 💋:
+        case "💋":
             return "Kiss"
-        case 🐈:
+        case "🐈":
             return "Cat"
-        case 🐢:
+        case "🐢":
             return "Turtle"
-        case 👻:
+        case "👻":
             return "Ghost"
-        case 🍕:
+        case "🍕":
             return "Pizza"
         default:
-            "Unknown"
+            return "Unknown"
         }
     }
 }
