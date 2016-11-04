@@ -43,21 +43,24 @@ class ViewController: UIViewController {
         
         func describe(emoji: String) -> String {
             switch emoji {
-            case 💋:
+            case "💋":
                 return "Kiss"
-            case 🐈:
+            case "🐈":
                 return "Cat"
-            case 🐢:
+            case "🐢":
                 return "Turtle"
-            case 🍕:
+            case "🍕":
                 return "Pizza"
-            case 👻:
+            case "👻":
                 return "Ghost"
             default:
                 return "Unknown"
                 
             }
         }
+        
+        print(describe(emoji: "👻"))
+        print(describe(emoji: "🐢"))
         
     }
     
