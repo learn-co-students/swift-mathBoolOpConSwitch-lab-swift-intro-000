@@ -32,10 +32,10 @@ class ViewController: UIViewController {
             return "Welcome!"
         case ((username == "Elaine") && (password % 3 == 0)):
             return "Welcome!"
-        case ((username == "Micheal") && (password % 3 == 0)):
+        case ((username == "Michael") && (password % 3 == 0)):
             return "Welcome!"
         default:
-            return "Acces Denied"
+            return "Access Denied"
         }
     }
     
