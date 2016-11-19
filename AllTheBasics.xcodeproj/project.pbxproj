@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5BA06B1A1D89C2410056AB2F /* AllTheBasicsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA06B191D89C2410056AB2F /* AllTheBasicsTest.swift */; };
 		5BA61EA21D22B68A00871321 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA61EA11D22B68A00871321 /* AppDelegate.swift */; };
 		5BA61EA41D22B68A00871321 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA61EA31D22B68A00871321 /* ViewController.swift */; };
 		5BA61EA71D22B68A00871321 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BA61EA51D22B68A00871321 /* Main.storyboard */; };
 		5BA61EA91D22B68A00871321 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BA61EA81D22B68A00871321 /* Assets.xcassets */; };
 		5BA61EAC1D22B68A00871321 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BA61EAA1D22B68A00871321 /* LaunchScreen.storyboard */; };
+		62E6940E1DE1031900A1376C /* AllTheBasicsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA06B191D89C2410056AB2F /* AllTheBasicsTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -162,7 +162,9 @@
 				TargetAttributes = {
 					5BA61E9D1D22B68A00871321 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 9GEG7667RS;
 						LastSwiftMigration = 0800;
+						ProvisioningStyle = Manual;
 					};
 					5BA61EB11D22B68A00871321 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -224,7 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BA06B1A1D89C2410056AB2F /* AllTheBasicsTest.swift in Sources */,
+				62E6940E1DE1031900A1376C /* AllTheBasicsTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,10 +347,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sami Alhelwah (T7NHYLWTGT)";
+				DEVELOPMENT_TEAM = 9GEG7667RS;
 				INFOPLIST_FILE = AllTheBasics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flatironSchool.AllTheBasics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b1aa68d7-3589-4d62-bd9f-72ad3eafe6ec";
+				PROVISIONING_PROFILE_SPECIFIER = "XC: *";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -357,10 +363,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sami Alhelwah (T7NHYLWTGT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sami Alhelwah (T7NHYLWTGT)";
+				DEVELOPMENT_TEAM = 9GEG7667RS;
 				INFOPLIST_FILE = AllTheBasics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flatironSchool.AllTheBasics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b1aa68d7-3589-4d62-bd9f-72ad3eafe6ec";
+				PROVISIONING_PROFILE_SPECIFIER = "XC: *";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
