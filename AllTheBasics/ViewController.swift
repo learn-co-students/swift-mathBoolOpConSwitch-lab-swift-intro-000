@@ -19,9 +19,9 @@ class ViewController: UIViewController {
     
 //**1**
     
-    func averageAbove75(a:Float,b:Float,c:Float)->Bool{
+    func averageIsAbove(_ a: Double, _ b: Double, _ c: Double)->Bool{
         let avr = (a+b+c)/3
-        if avr >= 75{
+        if avr > 75{
             return(true)
         } else {
             return(false)
@@ -33,12 +33,16 @@ class ViewController: UIViewController {
 
 //**2**
     
-    func isForce(name:String)->Bool{
-        switch name{
-        case "luke","Leia","Anakin","Obi Wan","Yoda","Vader":
-            return(true)
+    func passwordCombo(username:String, password:Int)->String{
+        switch username {
+        case "Jerry","Elaine","Michael":
+            if password % 3 == 0{
+                return "Welcome!"}
+            else { return ("Access Denied")
+            }
         default:
-            return(false)}
+            return"Access Denied"
+        }
     }
 
 
@@ -46,10 +50,10 @@ class ViewController: UIViewController {
 
 //**3**
 
-func describe(Emoji:String)->String{
-    switch Emoji{
+func describe(emoji:String)->String{
+    switch emoji{
     case "💋":
-        return("kiss")
+        return("Kiss")
     case "🐈":
         return("Cat")
     case "🐢":
@@ -58,6 +62,8 @@ func describe(Emoji:String)->String{
         return("Pizza")
     case "👻":
         return("Ghost")
+    case "💩":
+        return("Unknown")
     default:
         return("nun")
     }
