@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0730"
+   LastUpgradeVersion = "0810"
    version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -55,6 +55,11 @@
                BlueprintName = "AllTheBasicsTests"
                ReferencedContainer = "container:AllTheBasics.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "AllTheBasicsTest/testPasswordCombo()">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
       <MacroExpansion>
