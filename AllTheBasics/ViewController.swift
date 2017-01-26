@@ -23,22 +23,18 @@ class ViewController: UIViewController {
         }
             }
     
-    func passwordCombo(username: String, password: Int) -> String {
-        if username && password / 3 == true {
-            print("Welcome")
-        } else {
-            print("Access Denied")
-        }
-}
+    let name = ["Jerry", "Elaine", "Michael"]
     
- func passwordCombo(username: String, password: Int) -> String {
-     switch username && password / 3 {
-            case "Jerry", "Elaine", "Michael":
-                 return "Welcome"
-            default:
-                 return "Access Denied"
+    func passwordCombo(username: String, password: Int) -> String {
+        if name.contains(username) {
+            if password % 3 == 0 {
+                return "Welcome!"
+            } else {
+                
+            }
+        }
+        return "Access Denied"
     }
-}
     
     
     func describe(emoji: String) -> String {
