@@ -23,10 +23,9 @@ class ViewController: UIViewController {
         }
             }
     
-    let name = ["Jerry", "Elaine", "Michael"]
     
     func passwordCombo(username: String, password: Int) -> String {
-        if name.contains(username) {
+        if ["Jerry", "Elaine", "Michael"].contains(username) {
             if password % 3 == 0 {
                 return "Welcome!"
             } else {
