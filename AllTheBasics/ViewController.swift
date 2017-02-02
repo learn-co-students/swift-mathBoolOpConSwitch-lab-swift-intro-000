@@ -12,39 +12,48 @@ class ViewController: UIViewController {
     
     
     
-    func averageIsAbove75(a: Double, b: Double, c: Double) -> Bool {
-        let average = (a + b + c) / 3
-        if average > 75.0 {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
+    
+    func averageIsAbove(_ arg1: Double, _ arg2: Double, _ arg3: Double) ->Bool {
+        let avarage = (arg1 + arg2 + arg3)/3
+        if(avarage > 75.0) {
             return true
         } else {
             return false
         }
     }
     
-    //2
-    func passwordCombo(username: String, password: Int) -> String {
-        if username == "Jerry" || username == "Elaine" || username == "Michael" && password % 3 == 0 {
-            print("Welcome!")
+    func passwordCombo(username: String, password: Int) ->String {
+        if(username=="Jerry" || username=="Elaine" || username=="Michael") && (password%3==0) {
+            return "Welcome!"
         } else {
-            print("Access Denied")
+            return "Access Denied"
         }
-        //3
-        
-    func describeEmoji(emoji: String) -> String {
-            switch emoji {
-            case "💋":
-                return "Kiss"
-            case "🐈":
-                return "Cat"
-            case "🐢":
-                return "Turtle"
-            case "🍕":
-                return "Pizza"
-            case "👻":
-                return "Ghost"
-            default:
-                return "Unknown"
-            }
-        }
-
     }
+    
+    
+    func describe(emoji: String) -> String {
+        let switchon = emoji
+        switch switchon {
+        case "💋":
+            return "Kiss"
+        case "🐈":
+            return "Cat"
+        case "🐢":
+            return "Turtle"
+        case "🍕":
+            return "Pizza"
+        case "👻":
+            return "Ghost"
+        default:
+            return "Unknown"
+        }
+    }
+    
+    
+    
+}
