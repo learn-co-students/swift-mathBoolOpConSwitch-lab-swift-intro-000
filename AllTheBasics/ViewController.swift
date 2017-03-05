@@ -12,12 +12,12 @@ class ViewController: UIViewController {
     
     func averageIsAbove75(a:Double, b:Double, c:Double) -> Bool{
         
-        let average = (a+b+c)/Double(3)
-        
-        if average < Double(75){
-            return false
-        }else{
+
+        if ((a+b+c)/3.0) > 75.0{
             return true
+        }else{
+            return false
+            
         }
     }
     
