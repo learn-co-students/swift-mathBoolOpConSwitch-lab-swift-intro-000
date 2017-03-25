@@ -28,23 +28,34 @@ class ViewController: UIViewController {
     }
     
     
+//'Jerry', 'Elaine', or 'Michael'
+    
     func passwordCombo(username: String, password: Int) -> String {
         
-        switch username {
-            case "Jerry", "Elaine", "Michael":
-            return "Welcome"
-            
-        default:
-            return "Access Denied"
+        var usernameBool = false
+        
+        if username == "Jerry" {
+            usernameBool = true
         }
         
-        switch password % 3 {
-        case is Int:
-            return "Welcome"
-            
-        default:
+        if username == "Elaine" {
+            usernameBool = true
+        }
+        
+        if username == "Michael" {
+            usernameBool = true
+        }
+        
+        if usernameBool == true {
+            if password % 3 == 0 {
+                return "Welcome!"
+            } else {
+                return "Access Denied"
+            }
+        } else {
             return "Access Denied"
         }
+    
     }
 
     
@@ -54,7 +65,7 @@ class ViewController: UIViewController {
         case "💋":
             return "Kiss"
             
-        case "😺":
+        case "🐈":
             return "Cat"
             
         case "🐢":
