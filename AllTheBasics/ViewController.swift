@@ -10,14 +10,44 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    func averageIsAbove75(a: Double, b: Double, c: Double) -> Bool {
+        switch (a+b+c)/3 {
+        case 0...75:
+            return false
+        default:
+            return true
+        }
+    }
     
+    func passwordCombo(username: String, password: Int) -> String {
+        switch username {
+            case "Jerry", "Elaine", "Michael":
+                switch password % 3 {
+                case 0:
+                    return "Welcome!"
+                default:
+                    return "Access Denied"
+                }
+        default:
+            return "Access Denied"
+        }
+    }
     
-    
-    
-    // Implement your functions here
-    
-    
-    
-    
+    func describe(emoji: String) -> String {
+        switch emoji {
+        case "💋":
+            return "Kiss"
+        case "🐈":
+            return "Cat"
+        case "🐢":
+            return "Turtle"
+        case "🍕":
+            return "Pizza"
+        case "👻":
+            return "Ghost"
+        default:
+            return "Unknown"
+        }
+    }
 
 }
