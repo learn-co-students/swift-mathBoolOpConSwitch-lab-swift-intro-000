@@ -10,10 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
+    
+    
+    
+    
+    // Implement your functions here
+    
+    
     
     
     func averageIsAbove(_ numberOne: Double, _ numberTwo: Double, _ numberThree: Double) -> Bool {
