@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     
     
     func averageIsAbove75(a: Double, b: Double, c: Double) -> Bool {
-        if Int((a + b + c) / 3) > 75 {
+        if (a + b + c) / 3.0 > 75.0 {
             return true
         } else {
             return false
@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         switch username {
         case "Jerry", "Elaine", "Michael":
             if password % 3 == 0 {
-                return "Welcome"
+                return "Welcome!"
             } else {
                 return "Access Denied"
             }
