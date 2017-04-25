@@ -32,7 +32,8 @@ class AllTheBasicsTest: XCTestCase {
         XCTAssertTrue(testVC.averageIsAbove75(a: 80, b: 80, c: 80), "Average is above 75, should return true.")
         
     }
-    
+  
+  
     func testPasswordCombo() {
         
         XCTAssertEqual(testVC.passwordCombo(username: "Jose", password: 3), "Access Denied", "Incorrect Name, they should be denied access.")
