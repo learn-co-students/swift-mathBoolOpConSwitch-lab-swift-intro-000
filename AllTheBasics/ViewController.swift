@@ -17,9 +17,9 @@ class ViewController: UIViewController {
     // Implement your functions here
     
     
-    func averageIsAbove75(a: Int, b: Int, c: Int) -> Bool {
+    func averageIsAbove75(a: Double, b: Double, c: Double) -> Bool {
         switch (a + b + c)/3 {
-        case 75...100:
+        case 75.01...100:
             return true
         default:
             return false
@@ -29,9 +29,9 @@ class ViewController: UIViewController {
     func passwordCombo(username: String, password: Int) -> String {
         switch (username == "Jerry" || username == "Elaine" || username == "Michael") && (password % 3 == 0) {
         case true:
-            return("Welcome")
+            return("Welcome!")
         default:
-            return("Access denied")
+            return("Access Denied")
         }
 
     }
