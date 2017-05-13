@@ -10,10 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
-    
-    
-    
     // Implement your functions here
     
     func averageIsAbove75(a: Double, b: Double, c: Double) -> Bool {
@@ -49,6 +45,8 @@ class ViewController: UIViewController {
             return "Unknown"
         }
     }
+    
+    //committed from Xcode directly
 
 }
 
