@@ -12,12 +12,37 @@ class ViewController: UIViewController {
     
     
     
-    
-    
-    // Implement your functions here
-    
-    
-    
+    func averageIsAbove75(a:Double,b:Double,c:Double)->Bool {
+        if ((a+b+c)/3) > 75 {
+            return true } else {
+            return false }
+        
+        }
+    func passwordCombo(username:String,password:Int)->String {
+        
+       switch username {
+            case "Jerry", "Elaine", "Michael":
+            print("Welcome")
+        default: print("Unknown")
+            }
+        
+        if password % 3 == 0 {
+            print("Welcome")} else {
+            print("Access denied")
+        }
+  return "\(username)" + "\(password)"     }
     
 
+
+
+func describe(emoji:String)->String
+    { switch emoji {
+    case "💋": return "Kiss"
+    case "🐈": return "Cat"
+    case "🐢": return "Turtle"
+    case "🍕": return "Pizza"
+    case "👻": return "Ghost"
+    default: return "Unknown"}
 }
+}
+
