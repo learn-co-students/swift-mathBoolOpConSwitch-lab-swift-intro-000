@@ -28,11 +28,11 @@ class ViewController: UIViewController {
 //Second Function
     func passwordCombo(username: String, password: Int)->String{
         if username == "Jerry" && password % 3 == 0{
-            return "Welcome"
+            return "Welcome!"
         }else if username == "Elaine" && password % 3 == 0{
-            return "Welcome"
+            return "Welcome!"
         }else if username == "Michael" && password % 3 == 0{
-            return "Welcome"
+            return "Welcome!"
         }else{
             return "Access Denied"
         }
