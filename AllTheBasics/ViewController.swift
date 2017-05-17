@@ -19,19 +19,17 @@ class ViewController: UIViewController {
         
         }
     func passwordCombo(username:String,password:Int)->String {
-        
-       switch username {
-            case "Jerry", "Elaine", "Michael":
-            print("Welcome")
-        default: print("Unknown")
-            }
-        
-        if password % 3 == 0 {
-            print("Welcome")} else {
-            print("Access denied")
+        if username == "Jerry" && password % 3 == 0 {
+            return "Welcome!"} else if
+            username == "Elaine" && password % 3 == 0 {
+                return "Welcome!"} else if username == "Michael" && password % 3 == 0 {
+            return "Welcome!"} else { return "Access Denied" }
         }
-  return "\(username)" + "\(password)"     }
     
+
+
+
+
 
 
 
