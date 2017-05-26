@@ -43,12 +43,6 @@ class AllTheBasicsTest: XCTestCase {
         
         XCTAssertEqual(testVC.passwordCombo(username: "Jose", password: 4), "Access Denied", "Incorrect Name and incorrect password.")
         
-        XCTAssertEqual(testVC.passwordCombo(username: "Jerry", password: 3), "Welcome!", "Jerry and 3 is a correct combo, they should be welcomed")
-        
-        XCTAssertEqual(testVC.passwordCombo(username: "Elaine", password: 6), "Welcome!", "Elaine and 6 are correct combinations.")
-        
-        XCTAssertEqual(testVC.passwordCombo(username: "Michael", password: 21), "Welcome!", "Michael and 21 are correct combinations.")
-        
     }
     
     func testDescribeEmoji() {
