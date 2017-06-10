@@ -5,7 +5,7 @@
 
 ## Overview
 
-This lab will give you practice writing functions that incorporate math, booleans, conditional, and swift statements. 
+This lab will give you practice writing functions that incorporate math, booleans, conditional, and switch statements. 
 
 ##Instructions
 In this final lab within this section, you'll be creating three functions. All of your functions should be written in the `ViewController.swift` file located in the `AllTheBasics.xcodeproj` file.
