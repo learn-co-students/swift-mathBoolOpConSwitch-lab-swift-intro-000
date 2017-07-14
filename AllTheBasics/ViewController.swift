@@ -23,11 +23,11 @@ class ViewController: UIViewController {
         if(password % 3 == 0) {
             switch userName {
             case "Jerry":
-                return "Welcome"
+                return "Welcome!"
             case "Elaine":
-                return "Welcome"
+                return "Welcome!"
             case "Michael":
-                return "Welcome"
+                return "Welcome!"
             default:
                 return "Access Denied"
             }
