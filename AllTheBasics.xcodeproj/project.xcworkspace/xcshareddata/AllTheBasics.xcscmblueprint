@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F1A907B473F74E3CB4CEB312F28DEB55373767F9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "F1A907B473F74E3CB4CEB312F28DEB55373767F9" : 9223372036854775807,
+    "43651A93CB1BDD727080467D461A419F254A6C6C" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2506C3BB-E688-49F9-BEBF-A09470D3EA21",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "F1A907B473F74E3CB4CEB312F28DEB55373767F9" : "swift-mathBoolOpConSwitch-lab-swift-intro-000\/",
+    "43651A93CB1BDD727080467D461A419F254A6C6C" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "AllTheBasics",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "AllTheBasics.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:danieljustus32\/swift-switchLab-lab-swift-intro-000.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "43651A93CB1BDD727080467D461A419F254A6C6C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:danieljustus32\/swift-mathBoolOpConSwitch-lab-swift-intro-000.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F1A907B473F74E3CB4CEB312F28DEB55373767F9"
+    }
+  ]
+}
