@@ -23,7 +23,7 @@ class AllTheBasicsTest: XCTestCase {
     
     func testAverageIsAbove75() {
 
-        XCTAssertFalse(testVC.averageIsAbove75(a: 76, b: 75, c: 71.9), "Average is below 75, it should return false."  )
+        XCTAssertFalse(testVC.averageIsAbove75(a: 76, b: 75, c: 71.9), "Average is below 75, it should return false.")
         
         XCTAssertFalse(testVC.averageIsAbove75(a: 75, b: 75, c: 75), "Average must be over 75 to return true.")
         
