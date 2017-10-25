@@ -10,14 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
-    
-    
-    
-    // Implement your functions here
-    
-    
+    func averageIsAbove75(a: Double, b: Double, c: Double) -> Bool{
+        if ((a+b+c)/3) > 75 {
+            return true
+        }else{
+            return false
+        }
+    }
     
     
 
 }
+
