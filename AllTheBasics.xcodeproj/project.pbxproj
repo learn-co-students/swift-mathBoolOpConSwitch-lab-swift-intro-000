@@ -13,6 +13,7 @@
 		5BA61EA71D22B68A00871321 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BA61EA51D22B68A00871321 /* Main.storyboard */; };
 		5BA61EA91D22B68A00871321 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BA61EA81D22B68A00871321 /* Assets.xcassets */; };
 		5BA61EAC1D22B68A00871321 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BA61EAA1D22B68A00871321 /* LaunchScreen.storyboard */; };
+		97C0F5231FA164130067A28B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA61EA31D22B68A00871321 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -225,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97C0F5231FA164130067A28B /* ViewController.swift in Sources */,
 				5BA06B1A1D89C2410056AB2F /* AllTheBasicsTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,7 +373,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flatironSchool.AllTheBasics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -386,7 +388,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flatironSchool.AllTheBasics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
