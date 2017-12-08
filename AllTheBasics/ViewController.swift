@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    //Run Local Test
+    
     func averageIsAbove75(_ a: Double,_ b: Double,_ c: Double) -> Bool {
         return ((a+b+c)/3.0) > 75.0
     }
@@ -23,7 +25,7 @@ class ViewController: UIViewController {
             }
             return "Access Denied"
         default:
-            return "Acsess Denied"
+            return "Access Denied"
         }
     }
     
