@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     func averageIsAbove75(a: Double, b: Double, c: Double) -> Bool {
-        let avg = a + b + c / 3.0
+        let avg = (a + b + c) / 3.0
         return (avg > 75.0) ? true : false
     }
     
