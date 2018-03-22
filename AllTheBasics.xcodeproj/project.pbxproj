@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5BA06B1A1D89C2410056AB2F /* AllTheBasicsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA06B191D89C2410056AB2F /* AllTheBasicsTest.swift */; };
+		0D7619412064038D00CC458C /* AllTheBasicsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA06B191D89C2410056AB2F /* AllTheBasicsTest.swift */; };
+		0D7619442064057000CC458C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA61EA31D22B68A00871321 /* ViewController.swift */; };
 		5BA61EA21D22B68A00871321 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA61EA11D22B68A00871321 /* AppDelegate.swift */; };
-		5BA61EA41D22B68A00871321 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA61EA31D22B68A00871321 /* ViewController.swift */; };
 		5BA61EA71D22B68A00871321 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BA61EA51D22B68A00871321 /* Main.storyboard */; };
 		5BA61EA91D22B68A00871321 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BA61EA81D22B68A00871321 /* Assets.xcassets */; };
 		5BA61EAC1D22B68A00871321 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BA61EAA1D22B68A00871321 /* LaunchScreen.storyboard */; };
@@ -163,6 +163,7 @@
 					5BA61E9D1D22B68A00871321 = {
 						CreatedOnToolsVersion = 7.3.1;
 						LastSwiftMigration = 0800;
+						ProvisioningStyle = Manual;
 					};
 					5BA61EB11D22B68A00871321 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -215,7 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BA61EA41D22B68A00871321 /* ViewController.swift in Sources */,
+				0D7619442064057000CC458C /* ViewController.swift in Sources */,
 				5BA61EA21D22B68A00871321 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,7 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BA06B1A1D89C2410056AB2F /* AllTheBasicsTest.swift in Sources */,
+				0D7619412064038D00CC458C /* AllTheBasicsTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +301,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TREAT_MISSING_BASELINES_AS_TEST_FAILURES = NO;
 			};
 			name = Debug;
 		};
@@ -337,6 +339,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				TREAT_MISSING_BASELINES_AS_TEST_FAILURES = NO;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -345,10 +348,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AllTheBasics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flatironSchool.AllTheBasics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -357,10 +363,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AllTheBasics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flatironSchool.AllTheBasics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
