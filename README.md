@@ -8,28 +8,27 @@
 This lab will give you practice writing functions that incorporate math, booleans, conditional, and swift statements. 
 
 ##Instructions
-In this final lab you'll be writing three functions. All of your functions should be written in the `ViewController.swift` file located in the .xcworkspace file (included with this repo.).
+In this final lab within this section, you'll be creating three functions. All of your functions should be written in the `ViewController.swift` file located in the `AllTheBasics.xcodeproj` file.
 
-**1** - Create a function named averageIsAbove75 that takes in three arguments all of type `Double` with a return type of type `Bool`. It should take these three values and find their average. If the average is greater than 75, then return `true`, else return `false`.
+**1** - Create a function `averageIsAbove75(a:b:c:)` which takes in three arguments labeled as `a`, `b` and `c` all of type `Double`. This function should return back a `Bool` value. In your implementation of this function you should calculate the average of the three arguments passed into this function. If the average is greater than 75.0, then return `true`, else return `false`.
 
-If you were to call on this function, it would yield the following results. Notice how there are no external names to the parameters when this function is called.
+For example, if we were to call on this function we would get the following results:
 
 ````Swift
-averageIsAbove75(55, 25, 24)
+averageIsAbove75(a: 55, b: 25, c: 24)
 // false
 
-averageIsAbove75(100, 85, 90)
+averageIsAbove75(a: 100, b: 85, c: 90)
 // true
 ````
 
 
 
-**2** - Create a function named ````passwordCombo```` that takes in two arguments, one of type String which represents the username and the other of type ````Int```` which represents the password. This function will return a ````String```` letting the caller of this function know if the username/password combo passed into the function is correct!
+**2** - Create a function `passwordCombo(username:password:)` which takes in two arguments. The first argument labeled `username` should be of type `String`. The second argument labeled `password` should be of type `Int`. This function should return back a `String` value. The `String` value you should return depends on whether or not the username/password combination is correct.
 
-What makes it correct? The conditions are.. the username ````String```` must be either 'Jerry', 'Elaine', or 'Michael'. The password must be divisible by 3. If the username + password conditions pass, then return back the ````String```` "Welcome!". If either fail, then the String to be returned should be "Access Denied"
+What makes it correct? `username` must be either 'Jerry', 'Elaine', or 'Michael'. The password must be divisible by 3. If both conditions are true, then return back the `String` "Welcome!". If either fail, then the `String` value to be returned should be "Access Denied"
 
-Calling this function should yield the following results. Notice the external names of these arguments when calling on this function.
-
+Calling this function should yield the following results.
 ````Swift
 passwordCombo(username: "Bran", password: 22)
 // "Access Denied
@@ -46,35 +45,19 @@ passwordCombo(username: "Elaine", password: 33)
 
 
 
-**3** - Write a function named `numberGenerator` which takes in two arguments: "a" (which is of type ````String````) and "b" (which is of type ````Float````) and returns a ````Float````.  
+**3** - Create the function `describe(emoji:)`. It should take in one argument of type `String` and return back a `String`.
 
-Here is how `numberGenerator(_:_:)` should work:
-*  if `a` is between 1 and 5 (inclusive)  and `b` is between 10.5 and 15.0 (inclusive) or between 20.0 and 30.5 (inclusive) then return the product of `a` and `b`, otherwise.. return `0.0`
-* You don't yet know how to turn a `Float` into a `String` - so instead you can apply a technique like this to solve this problem using an `if-else` statement, or you can use a `switch` statement applying a similar technique.
+You should switch on the `emoji` argument in your implementation and return back a `String` value describing the emoji that is passed in as an argument. The emoji's and their descriptions you should include in your switch statement are the following:
 
-```swift
-if a == "1" { 
-	// use 1 to do math stuff, not "1" because we know that a is "1"!
-} else if a == "2" {
-	// do something with 2
-}
-```
+💋 - "Kiss"  
+🐈 - "Cat"  
+🐢 - "Turtle"  
+🍕 - "Pizza"  
+👻 - "Ghost"  
 
-Here are some examples (notice how both parameters have no external names).
+For the default case, we should return back the `String` "Unknown".
 
-````Swift
-let a = numberGenerator("2", 10.5)
-// a = 21.0
-
-let b = numberGenerator("9", 10.5)
-// b = 0.0  because the first paramter is out of range
-
-let c = numberGenerator("2", 7)
-// c = 0.0  because the second parameter is out of range
-````
-
-
-Your code might be more clear and debuggable if you break it up into multiple functions instead of having one "big" function.
+![](https://media.giphy.com/media/l0MYATH9ZumUHCBXy/giphy.gif)
 
 
 
