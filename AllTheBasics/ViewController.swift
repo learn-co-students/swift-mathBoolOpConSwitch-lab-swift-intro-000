@@ -28,13 +28,26 @@ class ViewController: UIViewController {
         }
     }
     
-    func passwordCombo(username: String, password: Int) -> String {
-        if username == "Elaine" || username == "Jerry" || username == "Michael" && password / 3 == 1 {
-            return "Welcome!"
-        } else {
+    
+    func passwordCombo (username: String, password: Int) -> String {
+        
+        if (password%3 != 0) {
             return "Access Denied"
         }
+        switch username {
+        case "Jerry":
+            return "Welcome!"
+        case "Elaine":
+            return "Welcome!"
+        case "Michael":
+            return "Welcome!"
+        default:
+            return "Access Denied"
+        }
+        
     }
+    
+    
     
     func describe(emoji: String) -> String {
         switch emoji {
