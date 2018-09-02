@@ -61,9 +61,9 @@ class AllTheBasicsTest: XCTestCase {
         
         XCTAssertEqual(testVC.describe(emoji: "🍕"), "Pizza", "The pizza emoji should return the string 'Pizza'")
         
-        XCTAssertEqual(testVC.describe(emoji: "👻"), "Ghost", "The ghost emoji should return the string 'Ghost'")
+        XCTAssertEqual(testVC.describe(emoji: "👻");, "Ghost", "The ghost emoji should return the string 'Ghost'")
         
-        XCTAssertEqual(testVC.describe(emoji: "💩"), "Unknown", "The poo emoji should return the string 'Unknown' because it's not in the list of emojis we want to describe in our function.")
+        XCTAssertEqual(testVC.describeEmoji(emoji: "💩")(emoji: "💩"), "Unknown", "The poo emoji should return the string 'Unknown' because it's not in the list of emojis we want to describe in our function.")
         
     }
     
