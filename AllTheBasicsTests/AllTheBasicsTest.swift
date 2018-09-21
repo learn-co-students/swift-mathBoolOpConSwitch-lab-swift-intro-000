@@ -7,11 +7,14 @@
 //
 
 import XCTest
+import UIKit
+
 @testable import AllTheBasics
 
 class AllTheBasicsTest: XCTestCase {
     
-    let testVC = ViewController()
+    let testVC = TestViewController()
+    
     
     override func setUp() {
         super.setUp()
